@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Idea-Factory</string>
+
+    <string name="ok">Ok</string>
+    <string name="title_dashboard">Main Activity</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_image_preview">Image Preview</string>
+    <string name="settings">Settings</string>
+
+
+    <string name="search">Search</string>
+    <string name="share_error">Please take a long press to select image</string>
+
+    <string name="copyright">\u00A9 2018 idea-factory All Rights Reserved | Powered by Mind Walk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+

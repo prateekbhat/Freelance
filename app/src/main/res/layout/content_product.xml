@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_color"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_12sdp">
+
+
+        <ImageButton
+            android:id="@+id/gridSelected"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:background="@drawable/grid_button_selector" />
+
+        <ImageButton
+            android:id="@+id/singleSelected"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_toRightOf="@+id/gridSelected"
+            android:background="@drawable/single_button_selector" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_toRightOf="@+id/singleSelected"
+            android:background="@drawable/ic_share" />
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/share"
+            android:background="@drawable/editext_corners"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:hint="@string/search"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingTop="@dimen/_2sdp"/>
+
+
+</LinearLayout>
